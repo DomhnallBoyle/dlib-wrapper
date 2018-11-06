@@ -1,0 +1,108 @@
+{
+	"name": "dlib_wrapper",
+	"entryPoints": [
+		{
+			"description": "5 Point Facial Features",
+			"language": "Python",
+			"filename": "simplified_facial_features.py",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "json",
+			"outputScript": ""
+		},
+		{
+			"description": "68 Point Facial Features",
+			"language": "Python",
+			"filename": "advanced_facial_features.py",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "json",
+			"outputScript": ""
+		},
+		{
+			"description": "HOG Face Detector",
+			"language": "Python",
+			"filename": "face_detection.py",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "json",
+			"outputScript": ""
+		},
+		{
+			"description": "CNN Face Detector",
+			"language": "Python",
+			"filename": "cnn_face_detection.py",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "json",
+			"outputScript": ""
+		},
+		{
+			"description": "Face Alignment",
+			"language": "Python",
+			"filename": "face_alignment.py",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "zip",
+			"outputScript": ""
+		},
+		{
+			"description": "128 Point Face Encodings",
+			"language": "Python",
+			"filename": "face_encodings.py",
+			"inputs": {
+				"image": "file",
+				"locations": "text"
+			},
+			"outputType": "json",
+			"outputScript": ""
+		},
+		{
+			"description": "Compare Face Encodings",
+			"language": "Python",
+			"filename": "compare_face_encodings.py",
+			"inputs": {
+				"encodings": "text",
+				"testing": "checkbox"
+			},
+			"outputType": "json",
+			"outputScript": ""
+		},
+		{
+			"description": "Face Tracking",
+			"language": "Python",
+			"filename": "correlation_tracker.py",
+			"inputs": {
+				"zip_file": "file",
+				"locations": "text"
+			},
+			"outputType": "zip",
+			"outputScript": ""
+		},
+		{
+			"description": "DNN Object Classification",
+			"language": "C++",
+			"filename": "dnn_object_recognition",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "json",
+			"outputScript": "dnn_object_recognition_output.py"
+		},
+		{
+			"description": "Semantic Segmentation",
+			"language": "C++",
+			"filename": "dnn_semantic_segmentation",
+			"inputs": {
+				"image": "file"
+			},
+			"outputType": "jpg",
+			"outputScript": "dnn_semantic_segmentation_output.py"
+		}
+	]
+}
